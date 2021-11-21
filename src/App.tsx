@@ -65,7 +65,7 @@ const useFlour = () => {
   }
 }
 
-const percentageUp = (objective: number, sourceUp: number, sourceLow: number) => {
+const percentageLow = (objective: number, sourceUp: number, sourceLow: number) => {
   if (objective === 0) return 0
   if (sourceUp === 0 ) return 0
   if (sourceLow === 0 ) return 0
@@ -75,7 +75,7 @@ const percentageUp = (objective: number, sourceUp: number, sourceLow: number) =>
   return value.toFixed(2)
 }
 
-const percentageLow = (objective: number, sourceUp: number, sourceLow: number) => {
+const percentageUp = (objective: number, sourceUp: number, sourceLow: number) => {
   if (objective === 0) return 0
   if (sourceUp === 0 ) return 0
   if (sourceLow === 0 ) return 0
